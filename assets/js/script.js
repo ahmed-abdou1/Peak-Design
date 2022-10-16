@@ -115,6 +115,8 @@ function closepopup(popup) {
 
 // drop down menu for services
 
+//@media (min-width: 992px) {
+
 
 document.addEventListener("mouseover", e => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]")
@@ -131,3 +133,19 @@ document.addEventListener("mouseover", e => {
     dropdown.classList.remove("active")
   })
 })
+
+// let selectOption = document.getElementById("select-nav-mobile");
+
+// let x = window.matchMedia("max-width: 992");
+
+// selectOption.addEventListener("click", function(x) {
+
+// })
+
+function addOptions() {
+  if (window.innerWidth < 992) {
+    let element = document.getElementById("hidden-nav-item");
+    element.classList.toggle("hidden-item");
+  }
+}
+
