@@ -42,7 +42,9 @@ figure, header, nav, section, article, aside, figcaption {
   border: 0;
   outline: 0;
 } */
-
+:root {
+  --secondary-color: coral;
+}
 /* clear fix */
 .grid:after {
   content: '';
@@ -147,12 +149,12 @@ body {
 }
 
 ::selection {
-  background: #fa65b1;
+  background: #3297FD;
   color: #fff !important;
 }
 
 ::-moz-selection {
-  background: #fa65b1;
+  background: #3297FD;
   color: #fff !important;
 }
 
@@ -191,6 +193,12 @@ body {
   /* text-align: center; */
 }
 
+.center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-heading h4 {
   color: #2a2a2a;
   font-size: 35px;
@@ -203,6 +211,13 @@ body {
 .section-heading h4 em {
   font-style: normal;
   color: #726ae3;
+  /* text-align: center; */
+}
+
+.line-dec {
+  width: 50px;
+  height: 2px;
+  background-color: #726ae3;
   /* text-align: center; */
 }
 
@@ -1505,7 +1520,7 @@ Free Quote
 */
 
 .free-quote {
-  background-image: url(../images/quote-bg.jpg);
+  background-image: url(../images/quote-bg-v3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1566,7 +1581,7 @@ Free Quote
   outline: none;
   border: none;
   margin-left: 30px;
-  background-color: #726ae3;
+  background-color: var(--secondary-color);
   font-size: 15px;
   color: #fff;
 }

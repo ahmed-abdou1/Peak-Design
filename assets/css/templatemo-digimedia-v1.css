@@ -147,12 +147,12 @@ body {
 }
 
 ::selection {
-  background: #fa65b1;
+  background: #3297FD;
   color: #fff !important;
 }
 
 ::-moz-selection {
-  background: #fa65b1;
+  background: #3297FD;
   color: #fff !important;
 }
 
@@ -191,6 +191,16 @@ body {
   /* text-align: center; */
 }
 
+/* .position-relative {
+  position: relative;
+} */
+
+.center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-heading h4 {
   color: #2a2a2a;
   font-size: 35px;
@@ -198,6 +208,7 @@ body {
   text-transform: capitalize;
   margin-bottom: 25px;
   /* text-align: center; */
+  width: fit-content;
 }
 
 .section-heading h4 em {

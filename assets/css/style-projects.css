@@ -212,6 +212,21 @@ body {
   border-radius: 10px;
 }
 
+.underline-left { position: relative; }
+
+.underline-left::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0%;
+  transform: translateX(0%);
+  width: 70%;
+  height: 6px;
+  background-image: var(--gradient-2);
+  /* background-color: var(--secondary-color); */
+  border-radius: 10px;
+}
+
 :is(.service-card, .features-card) .title {
   color: var(--st-patricks-blue);
   font-size: var(--fs-4);
