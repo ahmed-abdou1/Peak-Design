@@ -29,6 +29,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 <!--
 
 TemplateMo 568 DigiMedia
@@ -508,19 +510,49 @@ https://templatemo.com/tm-568-digimedia
     <!-- <button data-popup-target="#popup">Open popup</button> -->
     <div class="popup" id="popup-GAQ">
       <div class="popup-header">
-        <div class="title">Example popup GAQ</div>
-        <button data-close-button class="close-button">&times;</button>
+        <!-- <div class="title">Example popup GAQ</div> -->
+        <div class="float-right">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
       </div>
       <div class="popup-body">
         <div class="popup-GAQ-container">
           <div class="popup-GAQ-information">
-            <h1>Get In Touch</h1>
-            <br>
-            <h2>Contact Information</h2>
-            <h3>Phone: (613)400-1183</h3>
-            <h3>Ahmedfasla@gmail.com</h3>
-            <br>
-            <h2>Find US Here:</h2>
+            <h1 class="get-in-touch-GAQ">Contact Information</h1>
+            <p class="get-in-touch-paragraph">We're open for any suggestion or just to have a chat</p>
+            <div class="contact-icon-flex">
+              <div class="contact-icon-GAQ">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-icon-paragraph">
+                <p>Address: Ottawa-Gatineau Metropolitan Area</p>
+              </div>
+            </div>
+            <div class="contact-icon-flex">
+              <div class="contact-icon-GAQ">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-icon-paragraph">
+                <p>Phone: (613)-400-1183</p>
+              </div>
+            </div>
+            <div class="contact-icon-flex">
+              <div class="contact-icon-GAQ">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+              <div class="contact-icon-paragraph">
+                <p>Email: Ahmedfasla@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-icon-flex">
+              <div class="contact-icon-GAQ">
+                <i class="fa-sharp fa-solid fa-globe"></i>
+              </div>
+              <div class="contact-icon-paragraph">
+                <p>Website: www.peakdesign.com</p>
+              </div>
+            </div>
+            <h2 class="find-us-here">Find Us Here:</h2>
             <br>
             <div class="social-media-GAQ">
               <ul class="social-list">
@@ -549,14 +581,14 @@ https://templatemo.com/tm-568-digimedia
           <div class="popup-GAQ-form">
             <h1>Recieve A Free Quote Now</h1>
             <form action="">
-              <label for="name-gaq">Your Name: (Required)<span class="required-symbol">*</span></label>
-              <input type="text" name="name-gaq" id="name-gaq" placeholder="Micheal Anderson" required>
-              <label for="email-gaq">Email: (Required)<span class="required-symbol">*</span></label>
-              <input type="text" name="email-gaq" id="email-gaq" placeholder="Example@example.com" required>
-              <label for="phone-gaq">Phone Number: (Required)<span class="required-symbol">*</span></label>
-              <input type="text" name="phone-gaq" id="phone-gaq" placeholder="(xxx)xxx-xxx" required>
-              <label for="text-gaq">How may we help you?</label>
-              <textarea name="text-gaq" id="text-gaq" placeholder="I would like to get a floor plan done to potentially create a finished basement."></textarea>
+              <!-- <label for="name-gaq">Your Name: (Required)<span class="required-symbol">*</span></label> -->
+              <input type="text" name="name-gaq" id="name-gaq" placeholder="Name" required>
+              <!-- <label for="email-gaq">Email: (Required)<span class="required-symbol">*</span></label> -->
+              <input type="text" name="email-gaq" id="email-gaq" placeholder="Email" required>
+              <!-- <label for="phone-gaq">Phone Number: (Required)<span class="required-symbol">*</span></label> -->
+              <input type="text" name="phone-gaq" id="phone-gaq" placeholder="Phone Number" required>
+              <!-- <label for="text-gaq">How may we help you?</label> -->
+              <textarea name="text-gaq" id="text-gaq" placeholder="Message"></textarea>
               <input type="submit" value="Submit" id="submit-gaq">
             </form>
           </div>

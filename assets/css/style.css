@@ -529,6 +529,10 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
+#services {
+  padding-bottom: 140px;
+}
+
 .speciallization-container {
   margin-top: 150px;
 }
@@ -646,6 +650,11 @@ body {
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
+
+#blog{
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
 
 .blog { padding-block-end: 120px; }
 
@@ -1235,3 +1244,121 @@ body {
 /* .peak-logo {
   height: ;
 } */
+
+.swiper-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  margin-top: 100px;
+  /* overflow: visible !important; */
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+.slider-card {
+  background: #fff;
+  border-radius: 8px;
+  /* border: 1px black solid; */
+}
+.slider-card .image-box {
+  height: 200px;
+}
+.slider-card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.slider-card .profile-details {
+  margin-top: 30px;
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px; */
+}
+.slider-card .profile-details img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: #000;
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+  bottom: 40px;
+  z-index: 100;
+}
+
+.profile-border img {
+  box-sizing: border-box;
+  border: 10px solid white;
+  border-radius: 100%;
+}
+
+.job {
+  margin-bottom: 15px;
+}
+
+.name-job {
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  /* width: 85%; */
+}
+
+.review {
+  width: 85%;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center; */
+}
+
+/* .profile-border {
+  border: 10px solid white;
+  border-radius: 50%;
+} */
+
+#reviews {
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
