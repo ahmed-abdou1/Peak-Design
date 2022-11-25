@@ -61,14 +61,16 @@ https://templatemo.com/tm-568-digimedia
 
       <div class="overlay" data-overlay></div>
 
-      <a href="#">
-        <h1 class="logo"><b>Desinic</b></h1>
+      <a href="#" class="peak-nav-logo">
+        <!-- <h1 class="logo">Desinic</h1> -->
+        <img src="./assets/images/Peak-Design-Logo-With-Text.svg" class="peak-logo" width="50" height="50" loading="lazy">
+        <!-- <h1 class="peak-logo-text">PEAK</h1> -->
       </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a href="#" class="logo">Desinic</a>
+          <img src="./assets/images/Peak-Design-Logo-With-Text.svg" class="peak-logo-mobile" width="190px" height="40" loading="lazy" style="width: fit-content; margin-left: 2px;">
 
           <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
@@ -85,16 +87,38 @@ https://templatemo.com/tm-568-digimedia
             <a href="#about" class="navbar-link" data-navbar-link>About</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#services" class="navbar-link" data-navbar-link>Services</a>
+          <li class="navbar-item" onclick="addOptions()">
+            <div class="dropdown-services" data-dropdown>
+              <a href="#services" class="navbar-link" id="services-link-navbar" data-dropdown-button>Services <ion-icon name="chevron-down-outline" class="services-down-arrow"></ion-icon></a>
+              <div class="dropdown-menu-services">
+                <ul>
+                  <li class="multi-service-option"><a href="consultations.html" style="color: inherit;">Consultations</a></li>
+                  <li class="multi-service-option"><a href="projects.html" style="color: inherit;">Projects</a></li>
+                  <li class="multi-service-option"><a href="inspections.html" style="color: inherit;">Inspections</a></li>
+                </ul>
+              </div>
+            </div>
           </li>
+          <div class="hidden-item" id="hidden-nav-item">
+            <li class="navbar-item">
+              <a href="consultations.html" class="navbar-link" data-navbar-link>Consultations</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="projects.html" class="navbar-link" data-navbar-link>Projects</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="inspections.html" class="navbar-link" data-navbar-link>Inspections</a>
+            </li>
+          </div>
 
           <li class="navbar-item">
             <a href="#blog" class="navbar-link" data-navbar-link>Our Team</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#features" class="navbar-link" data-navbar-link>Projects</a>
+            <a href="faq.html" class="navbar-link" data-navbar-link>FAQ</a>
           </li>
 
           <li class="navbar-item">

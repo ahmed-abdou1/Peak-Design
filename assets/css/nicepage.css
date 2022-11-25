@@ -2262,11 +2262,11 @@ a {
 *:after {
   box-sizing: border-box;
 }
-html {
+/* html {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-}
+} */
 body {
   height: auto;
   min-height: 100%;
@@ -16521,10 +16521,10 @@ div.u-video,
 html {
   font-size: 16px;
 }
-.u-body {
+/* .u-body {
   font-size: 1rem;
-  /* line-height: 1.6; */
-}
+  line-height: 1.6;
+} */
 .u-body h1,
 .u-body h2,
 .u-body h3,
@@ -22809,7 +22809,7 @@ h6 {
   color: #ffffff;
 }
 .u-body {
-  color: #111111;
+  /* color: #111111; */
   background-color: #ffffff;
   --effect-scale: 1.1;
 }
@@ -37969,7 +37969,7 @@ a.u-link.u-text-hover-grey-90:hover {
         font-size: 3rem;
         line-height: 1.1;
         } */
-        h2:not(.u-subtitle)
+        /* h2:not(.u-subtitle)
         {
         font-size: 4.0625rem;
         line-height: 1.1;
@@ -37979,7 +37979,7 @@ a.u-link.u-text-hover-grey-90:hover {
         list-icon-size: 0.8;
         font-family: Oswald,sans-serif;
         font-weight: 700;
-        }
+        } */
         h3
         {
         font-weight: 400;

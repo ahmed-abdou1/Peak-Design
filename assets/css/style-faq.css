@@ -35,6 +35,8 @@
     --black_70: hsla(0, 0%, 0%, 0.7);
     --rajah: hsl(29, 99%, 67%);
     --white: hsl(0, 0%, 100%);
+
+    --secondary-color: coral;
   
     --gradient-1: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--ksu-purple) 51%,var(--royal-blue-dark));
     --gradient-2: linear-gradient(90deg,var(--razzmatazz) ,var(--rajah));
@@ -134,7 +136,7 @@
   address { font-style: normal; }
   
   html {
-    font-family: var(--ff-source-sans-pro);
+    font-family: var(--ff-poppins);
     font-size: 10px;
     scroll-behavior: smooth;
   }
@@ -211,21 +213,6 @@
     background-image: var(--gradient-2);
     border-radius: 10px;
   }
-
-.underline-left { position: relative; }
-
-.underline-left::before {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 0%;
-  transform: translateX(0%);
-  width: 70%;
-  height: 6px;
-  background-image: var(--gradient-2);
-  /* background-color: var(--secondary-color); */
-  border-radius: 10px;
-}
   
   :is(.service-card, .features-card) .title {
     color: var(--st-patricks-blue);
@@ -250,6 +237,7 @@
   \*-----------------------------------*/
   
   .header-projects .btn { display: none; }
+  
 
   .header-projects .peak-logo {
     filter: invert(27%) sepia(53%) saturate(6035%) hue-rotate(216deg) brightness(100%) contrast(91%);
@@ -276,11 +264,12 @@
   .peak-nav-logo {
     display: flex;
   }
-  
+
+
   .header-projects {
     --color: var(--white);
   
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -1042,6 +1031,12 @@
    * responsive for larger than 992px screen
    */
   
+  @media (max-width: 992px) {
+    .dropdown-menu-services {
+      display: none;
+    }
+  }
+  
   @media (min-width: 992px) {
   
     /**
@@ -1248,20 +1243,6 @@
   *, *::after, *::before {
     box-sizing: border-box;
   }
-  
-  /* .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 500px;
-    max-width: 80%;
-  } */
   .popup {
     position: fixed;
     top: 50%;
@@ -1608,256 +1589,114 @@
     font-size: 18px;
   }
   
-  .inspections-div {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 170px;
+  .footer { font-size: var(--fs-8); }
+  
+  #contact-us-section {
+    padding-top: 200px;
+    /* padding-bottom: 100px; */
   }
   
-  .inspections-service:hover .logo-background {
-    transition: 0.5s;
-    color: white;
-    background-color: blue;
-    border: solid blue 1px;
+  .contact-label {
+    position: relative;
+    left: 5%;
   }
   
-  .inspections-service:hover {
-    transition: 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .services-down-arrow {
+    float: right;
+    margin-top: 5px;
+    margin-left: 5px;
   }
   
-  .inspections-img {
-    width: 500px;
-    height: 500px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-     box-sizing: content-box;
+  .dropdown-services.active > #services-link-navbar,
+  .services-link-navbar:hover {
+    color: black;
   }
   
-  .inspections-information {
-    width: 500px;
-  }
-  
-  .inspections-service-container {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 10px;
-    /* border: solid black 1px; */
-    /* max-width: 900px; */
-  }
-  
-  .inspections-service {
-    border: solid #cdcdcd 1px;
-    width: 350px;
-    height: 285px;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: left;
-  }
-  
-  .inspections-service-container-center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .logo-background {
-    border: solid black 1px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    /* padding: 10px; */
+  .dropdown-services {
     position: relative;
   }
   
-  .logo-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .lni {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    transform: scale(2);
-  }
-  
-  .free-quote {
-    margin-top: 0px;
-  }
-  
-  .logo {
-    color: var(--st-patricks-blue);
-    font-family: var(--ff-source-sans-pro);
-    font-size: var(--fs-3);
-  }
-  
-  html {
-    font-family: var(--ff-source-sans-pro);
-    font-size: 10px;
-    scroll-behavior: smooth;
-  }
-
-  #consulting-company {
-    font-size: 1.75rem;
-  }
-
-  #page-header {
-    font-size: 4rem;
-  }
-
-  #page-subheader {
-    font-size: 1.75rem;
-  }
-
-  #read-more-btn {
-    font-size: 1.5rem;
-  }
-
-  #advice-header {
-    /* font-size: 3rem; */
-    font-family: var(--ff-poppins);
-  }
-
-  #advice-subheaders {
-    font-size: 2rem;
-  }
-
-  #advice-paragraph {
-    font-size: 1.5rem;
-  }
-
-#advice-more-info {
-  font-size: 1.5rem;
-}
-
-#section-3-intro {
-  /* font-size: 2rem; */
-}
-
-#section-3-header {
-  /* font-size: 3.5rem; */
-}
-
-#section-3-paragraph {
-  font-size: 1.5rem;
-}
-
-#section-4-header {
-  font-size: 4rem;
-}
-
-#section-4-subheader {
-  font-size: 1.5rem;
-}
-
-#section-4-titles {
-  font-size: 3rem;
-}
-
-#section-4-paragraph {
-  font-size: 1.5rem;
-}
-
-#section-5-header {
-  font-size: 4rem;
-}
-
-#section-5-paragraph {
-  font-size: 1.5rem;
-}
-
-#section-6-intro {
-  font-size: 2rem;
-}
-
-#section-6-header {
-  font-size: 3.5rem;
-}
-
-#section-6-paragraph {
-  font-size: 1.5rem;
-}
-
-.copyright {
-  margin: 0px !important;
-}
-
-/* .free-quote form input {
-  color: black;
-} */
-
-/* .font-change {
-  font-style: 'Poppins', sans-serif !important;
-} */
-
-.services-down-arrow {
-  float: right;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-.dropdown-services.active > #services-link-navbar,
-.services-link-navbar:hover {
-  color: black;
-}
-
-.dropdown-services {
-  position: relative;
-}
-
-@media (max-width: 992px) {
   .dropdown-menu-services {
+    position: absolute;
+    left: 0;
+    /* top: calc(100% + .25rem); */
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0ms ease-in-out, transform 0ms ease-in-out;
+  }
+  
+  .dropdown-menu-services:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown-services.active > #services-link-navbar + .dropdown-menu-services {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    width: max-content;
+  }
+  
+  .multi-service-option {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .multi-service-option:hover {
+    color: red;
+  }
+  
+  .hidden-item {
     display: none;
   }
+  
+  /* edit for popup */
+
+.questions-container{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.dropdown-menu-services {
-  position: absolute;
-  left: 0;
-  /* top: calc(100% + .25rem); */
-  background-color: white;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px);
-  transition: opacity 0ms ease-in-out, transform 0ms ease-in-out;
+.question{
+    border-bottom: 1px solid #fff;
+}
+.question button{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
 }
 
-.dropdown-menu-services:hover {
-  cursor: pointer;
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
 }
-
-.dropdown-services.active > #services-link-navbar + .dropdown-menu-services {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  width: max-content;
-  z-index: 10;
-}
-
-.multi-service-option {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.multi-service-option:hover {
-  color: red;
-}
-
-.hidden-item {
-  display: none;
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
 }
