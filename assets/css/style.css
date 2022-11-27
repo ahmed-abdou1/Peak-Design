@@ -42,10 +42,13 @@
   --royal-blue: hsl(203, 100%, 38%);
   --light-royal-blue: hsl(203, 100%, 38%);
 
+  --dark-blue: #000058;
+
   --gradient-1: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--ksu-purple) 51%,var(--royal-blue-dark));
   --gradient-2: linear-gradient(90deg,var(--razzmatazz) ,var(--rajah));
   --gradient-3: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--royal-blue) 51%,var(--royal-blue-dark));
-
+  --gradient-4: linear-gradient(90deg,var(--dark-blue) ,var(--dark-blue));
+  /* #000058 */
   /**
    * typography
    */
@@ -776,7 +779,7 @@ body {
 .footer a { color: inherit; }
 
 .footer-top {
-  background-image: url("../images/footer-bg.png"), var(--gradient-3);
+  background-image: url("../images/footer-bg.png"), var(--gradient-4);
   background-repeat: no-repeat;
   background-size: auto, 200%;
   background-position: center, center;
@@ -800,6 +803,16 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+}
+
+#social-link-GAQ {
+  color: white;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease 0s;
+}
+
+#social-link-GAQ:hover {
+  color: var(--dark-blue);
 }
 
 .footer-top .social-link {
@@ -868,12 +881,12 @@ body {
   position: fixed;
   bottom: 0;
   right: 15px;
-  background-color: var(--winter-sky);
+  background-color: var(--secondary-color);
   color: var(--white);
   font-size: 2rem;
   padding: 14px;
   border-radius: var(--radius-4);
-  box-shadow: -3px 3px 15px var(--winter-sky_50);
+  box-shadow: -3px 3px 15px var(--secondary-color);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
@@ -1560,8 +1573,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  background: #1c1e25;
-  border-bottom: 1px solid #1c1e25;
+  background: var(--light-royal-blue);
+  border-bottom: 1px solid var(--light-royal-blue);
 }
 
 .float-right {
@@ -1703,7 +1716,7 @@ body {
 
 .popup-GAQ-container {
   display: flex;
-  background: #1c1e25;
+  background: var(--light-royal-blue);
 }
 
 .popup-GAQ-information {
@@ -1711,7 +1724,7 @@ body {
   /* text-align: center; */
   /* padding-top: 50px; */
   padding: 1.5rem;
-  background: #1c1e25;
+  background: var(--light-royal-blue);
   color: white;
 }
 
@@ -1731,10 +1744,13 @@ body {
 
 .contact-icon-GAQ {
   border: 1px solid black;
+  /* width: 40px;
+  height: 40px; */
   width: 40px;
   height: 40px;
+  padding: 10px;
   border-radius: 50%;
-  background: grey;
+  background: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1751,9 +1767,9 @@ body {
 .popup-GAQ-form {
   width: 50%;
   padding: 1.5rem;
-  background: #272a34;
+  background: var(--dark-blue);
   color: white;
-  border: 1px solid #272a34;
+  border: 1px solid var(--light-royal-blue);
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -1835,12 +1851,12 @@ body {
     margin-bottom: 20px;
   }
 
-  .padding-right-left {
+  /* .padding-right-left {
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-  }
+  } */
 
   .border-radius-all-around {
     border-radius: 20px 20px 0px 0px;

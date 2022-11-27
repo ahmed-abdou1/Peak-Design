@@ -1340,7 +1340,7 @@ Services Style
 }
 
 .services:after {
-  content: '';
+  /* content: ''; */
   background-image: url(../images/services-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
