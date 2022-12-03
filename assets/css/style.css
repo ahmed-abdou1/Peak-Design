@@ -1109,7 +1109,7 @@ body {
 
   .navbar-link { color: var(--color); }
 
-  .navbar-link:hover { color: var(--winter-sky); }
+  .navbar-link:hover { color: var(--secondary-color); }
 
 
   /**
@@ -1702,7 +1702,8 @@ body {
 }
 
 #submit-gaq:hover {
-  background-color: var(--razzmatazz);
+    /* background-color: var(--razzmatazz); */
+    color: black;
 }
 
 .required-symbol {

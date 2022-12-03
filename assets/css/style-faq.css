@@ -22,7 +22,10 @@
   
     --st-patricks-blue: hsl(236, 57%, 28%);
     --amaranth-purple: hsl(335, 88%, 38%);
-    --royal-blue-dark: hsl(231, 68%, 21%);
+    /* --royal-blue-dark: hsl(231, 68%, 21%); */
+
+    --royal-blue-dark: #1463F3;
+
     --chrome-yellow: hsl(39, 100%, 52%);
     --space-cadet-1: hsl(230, 41%, 25%);
     --space-cadet-2: hsl(230, 59%, 16%);
@@ -38,12 +41,12 @@
 
     --secondary-color: coral;
     --light-royal-blue: hsl(203, 100%, 38%);
-  
+    --royal-blue: hsl(203, 100%, 38%);
     --dark-blue: #000058;
   
     --gradient-1: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--ksu-purple) 51%,var(--royal-blue-dark));
     --gradient-2: linear-gradient(90deg,var(--razzmatazz) ,var(--rajah));
-  
+    --gradient-3: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--royal-blue) 51%,var(--royal-blue-dark));
     --gradient-4: linear-gradient(90deg,var(--dark-blue) ,var(--dark-blue));
     /**
      * typography
@@ -173,7 +176,8 @@
   .h3 { font-family: var(--ff-source-sans-pro); }
   
   .btn {
-    background-image: var(--gradient-2);
+    /* background-image: var(--gradient-2); */
+    background-color: var(--secondary-color);
     background-size: 200%;
     color: var(--white);
     padding: 12px 35px;
@@ -214,7 +218,8 @@
     transform: translateX(-50%);
     width: 70%;
     height: 6px;
-    background-image: var(--gradient-2);
+    /* background-image: var(--gradient-2); */
+    background-color: var(--secondary-color);
     border-radius: 10px;
   }
   
@@ -1094,7 +1099,7 @@
   
     .navbar-link { color: var(--st-patricks-blue); }
   
-    .navbar-link:hover { color: var(--winter-sky); }
+    .navbar-link:hover { color: var(--secondary-color); }
   
   
     /**
@@ -1520,7 +1525,8 @@
   }
   
   #submit-gaq:hover {
-    background-color: var(--razzmatazz);
+    /* background-color: var(--razzmatazz); */
+    color: black;
   }
   
   .required-symbol {
@@ -1758,7 +1764,7 @@
 }
 .question button{
     width: 100%;
-    background-color: #000;
+    background: var(--gradient-3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1788,6 +1794,7 @@
     max-height: 200px; 
     opacity: 1;
     padding:0px 15px 30px 15px;
+    color: black;
 }
 .question button .d-arrow.rotate{
     transform: rotate(180deg);

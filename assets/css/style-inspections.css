@@ -22,7 +22,7 @@
 
   --st-patricks-blue: hsl(236, 57%, 28%);
   --amaranth-purple: hsl(335, 88%, 38%);
-  --royal-blue-dark: hsl(231, 68%, 21%);
+  /* --royal-blue-dark: hsl(231, 68%, 21%); */
   --chrome-yellow: hsl(39, 100%, 52%);
   --space-cadet-1: hsl(230, 41%, 25%);
   --space-cadet-2: hsl(230, 59%, 16%);
@@ -174,7 +174,8 @@ body {
 .h3 { font-family: var(--ff-source-sans-pro); }
 
 .btn {
-  background-image: var(--gradient-2);
+  /* background-image: var(--gradient-2); */
+  background-color: var(--secondary-color);
   background-size: 200%;
   color: var(--white);
   padding: 12px 35px;
@@ -215,7 +216,8 @@ body {
   transform: translateX(-50%);
   width: 70%;
   height: 6px;
-  background-image: var(--gradient-2);
+  /* background-image: var(--gradient-2); */
+  background-color: var(--secondary-color);
   border-radius: 10px;
 }
 
@@ -1087,7 +1089,7 @@ body {
 
   .navbar-link { color: var(--st-patricks-blue); }
 
-  .navbar-link:hover { color: var(--winter-sky); }
+  .navbar-link:hover { color: var(--secondary-color); }
 
 
   /**
@@ -1528,7 +1530,8 @@ body {
 }
 
 #submit-gaq:hover {
-  background-color: var(--razzmatazz);
+    /* background-color: var(--razzmatazz); */
+    color: black;
 }
 
 .required-symbol {

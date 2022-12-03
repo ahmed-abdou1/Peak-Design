@@ -43,6 +43,20 @@ figure, header, nav, section, article, aside, figcaption {
   outline: 0;
 } */
 
+:root {
+  --royal-blue-dark: #1463F3;
+
+  --secondary-color: coral;
+  --light-royal-blue: hsl(203, 100%, 38%);
+
+  --dark-blue: #000058;
+
+  --gradient-1: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--ksu-purple) 51%,var(--royal-blue-dark));
+  --gradient-2: linear-gradient(90deg,var(--razzmatazz) ,var(--rajah));
+
+  --gradient-4: linear-gradient(90deg,var(--dark-blue) ,var(--dark-blue));
+}
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -185,7 +199,7 @@ body {
 .section-heading h6 {
   font-size: 15px;
   font-weight: 700;
-  color: #726ae3;
+  color: var(--secondary-color);
   text-transform: uppercase;
   margin-bottom: 15px;
   /* text-align: center; */
@@ -202,7 +216,7 @@ body {
 }
 
 .section-heading h4 {
-  color: #2a2a2a;
+  color: var(--royal-blue-dark);
   font-size: 35px;
   font-weight: 700;
   text-transform: capitalize;
@@ -213,7 +227,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #726ae3;
+  color: var(--secondary-color);
   /* text-align: center; */
 }
 
@@ -227,8 +241,8 @@ body {
 .border-first-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #fa65b1 !important;
-  border: 1px solid #fa65b1 !important;
+  color: var(--secondary-color) !important;
+  border: 1px solid var(--secondary-color) !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -236,7 +250,7 @@ body {
 }
 
 .border-first-button a:hover {
-  background-color: #fa65b1;
+  background-color: var(--secondary-color);
   color: #fff !important;
 }
 
@@ -965,7 +979,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #fa65b1;
+    background: var(--secondary-color);
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -988,7 +1002,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #fa65b1;
+    background: var(--secondary-color);
     border-radius: 50%;
 }
 
@@ -1041,7 +1055,7 @@ Banner Style
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 700;
-  color: #fa65b1;
+  color: var(--secondary-color);
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -1051,7 +1065,7 @@ Banner Style
   position: relative;
   font-weight: 700;
   font-size: 50px;
-  color: #2a2a2a;
+  color: var(--royal-blue-dark);
   margin-bottom: 20px;
 }
 
@@ -1889,7 +1903,7 @@ contact
 
 
 form#contact:before {
-  background-image: url(../images/contact-top-right.png);
+  background-image: url(../images/contact-top-right-v3.png);
   position: absolute;
   right: 0;
   top: 0;
@@ -1908,7 +1922,7 @@ form#contact:before {
 }
 
 form#contact:after {
-  background-image: url(../images/contact-bottom-right.png);
+  background-image: url(../images/contact-bottom-right-v3.png);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -2015,21 +2029,21 @@ form#contact button {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #fa65b1;
+  color: var(--secondary-color);
   margin-top: 30px;
   width: 100%;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border: 1px solid #fa65b1;
+  border: 1px solid var(--secondary-color);
   transition: all .3s;
   outline: none;
   z-index: 1;
 }
 
 form#contact button:hover {
-  background-color: #fa65b1!important;
+  background-color: var(--secondary-color)!important;
   color: #fff!important;
 }
 
