@@ -1293,13 +1293,78 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   z-index: 10;
-  background-color: white;
-  width: 500px;
+  background-color: var(--light-royal-blue);
+  width: 800px;
   max-width: 80%;
-  max-height: 50%;
+  max-height: 90%;
   overflow: hidden;
   overflow-y: scroll;
   /* padding-right: 20px; */
+}
+
+.popup-header .popup-title {
+  /* font-size: 1.25rem;
+  font-weight: bold; */
+  color: white;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.popup::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border: 1px transparent solid;
+  border-radius: 10px;
+  z-index: -10;
+}
+
+.popup::-webkit-scrollbar-track {
+  background-color: var(--light-royal-blue);
+  margin-block: .5em;
+}
+
+/* .popup::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+} */
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: var(--light-royal-blue);
+  border-bottom: 1px solid var(--light-royal-blue);
+}
+
+.float-right {
+  float: right;
+}
+
+.popup-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.popup-body {
+  /* padding: 10px 15px; */
+  font-family: var(--ff-source-sans-pro);
 }
 
 /* .popup {
@@ -1352,6 +1417,32 @@ body {
   .popup-GAQ-form {
     width: auto !important;
   }
+
+  .popup {
+    height: 50%;
+  }
+
+  .padding-bottom {
+    padding-bottom: 5px;
+    padding-left: 0px;
+  }
+
+  .popup::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 1px transparent solid;
+    border-radius: 10px;
+    z-index: -10;
+  }
+
+  .popup::-webkit-scrollbar-track {
+    background-color: white;
+    margin-block: .5em;
+  }
+  
+  /* .popup::-webkit-scrollbar-thumb:hover {
+    background-color: darkgray;
+    cursor: pointer;
+  } */
 }
 
 @media (max-height: 1000px) {
@@ -1386,65 +1477,6 @@ body {
 }
 
 /* popup-GAQ^ */
-
-.popup::-webkit-scrollbar {
-  width: 0.4vw;
-}
-
-.popup::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, .5);
-  border: 1px transparent solid;
-  border-radius: 10px;
-  z-index: -10;
-}
-
-.popup::-webkit-scrollbar-thumb:hover {
-  background-color: darkgray;
-  cursor: pointer;
-}
-
-.popup::-webkit-scrollbar-track {
-  background-color: white;
-  margin-block: .5em;
-}
-
-.popup.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.popup-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
-  background: var(--light-royal-blue);
-  border-bottom: 1px solid var(--light-royal-blue);
-}
-
-.float-right {
-  float: right;
-}
-
-.popup-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.popup-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-}
-
-.popup-body {
-  /* padding: 10px 15px; */
-  font-family: var(--ff-source-sans-pro);
-}
 
 #popup-overlay {
   position: fixed;
