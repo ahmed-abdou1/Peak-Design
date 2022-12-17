@@ -1981,7 +1981,7 @@ form#contact #map iframe {
 }
 
 .fill-form .icon:hover a {
-  color: #fa65b1;
+  color: var(--secondary-color);
 }
 
 form#contact input {
