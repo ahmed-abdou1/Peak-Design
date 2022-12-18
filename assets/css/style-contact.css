@@ -797,7 +797,7 @@ body {
 
 .footer-top .social-link {
   background-color: var(--white);
-  color: var(--winter-sky);
+  color: var(--secondary-color);
   font-size: 18px;
   padding: 8px;
   border-radius: 50%;
@@ -857,16 +857,16 @@ body {
   #GO TO TOP
 \*-----------------------------------*/
 
-/* .go-top {
+.go-top {
   position: fixed;
   bottom: 0;
   right: 15px;
-  background-color: var(--winter-sky);
+  background-color: var(--secondary-color);
   color: var(--white);
   font-size: 2rem;
   padding: 14px;
   border-radius: var(--radius-4);
-  box-shadow: -3px 3px 15px var(--winter-sky_50);
+  box-shadow: -3px 3px 15px var(--secondary-color);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
@@ -881,7 +881,7 @@ body {
 
 .background-header {
   color: black;
-} */
+}
 
 
 
@@ -1417,6 +1417,10 @@ body {
   color: white;
 }
 
+.popup-header .close-button:hover {
+  color: var(--secondary-color);
+}
+
 .popup-body {
   /* padding: 10px 15px; */
   font-family: var(--ff-source-sans-pro);
@@ -1749,5 +1753,78 @@ body {
 .hidden-item {
   display: none;
 }
+
+.section-thankyou {
+  height: 50vh;
+  position: relative;
+  background-color: #fff;
+}
+
+.center-components {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-thankyou-components {
+  text-align: center;
+}
+
+.message-sent-img {
+  width: 180px;
+}
+
+.h1-color {
+  color: black;
+}
+
+.thank-you-paragraph {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  color: black;
+}
+
+#thankyou-btn {
+  padding: 15px 20px 15px 15px;
+  border-radius: 60px;
+  /* background-color: #3719CA; */
+  background-color: var(--secondary-color);
+  color: white;
+  /* border: transparent 2px solid; */
+  transition: .4s;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+#thankyou-btn:hover {
+  padding: 15px 20px 15px 15px;
+  border-radius: 50px;
+  /* background-color: transparent; */
+  color: black;
+  /* border: #3719CA 2px solid; */
+  cursor: pointer;
+}
+
+#thankyou-btn:hover > img {
+  height: 25px;
+  width: 40px;
+  filter: invert(0%) sepia(98%) saturate(55%) hue-rotate(287deg) brightness(94%) contrast(98%);
+}
+
+#thankyou-btn > img,
+#thankyou-btn > span {
+  vertical-align: middle;
+}
+
+.back-arrow {
+  height: 25px;
+  width: 40px;
+  margin-bottom: 3px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(211deg) brightness(103%) contrast(105%);
+  /* border: #3719CA solid 2px; */
+}
+
+
 
 /* edit for popup */

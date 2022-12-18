@@ -898,6 +898,7 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+
 }
 
 @media (min-width: 767px) {
@@ -1662,7 +1663,7 @@ Portfolio
 
 .portfolio-item:hover .down-content h4,
 .portfolio-item:hover .down-content span {
-  color: #fa65b1;
+  color: var(--secondary-color);
 }
 
 .portfolio-item .thumb img {
@@ -1724,7 +1725,7 @@ Portfolio
 
 .our-portfolio .owl-nav span:hover {
   color: #fff;
-  background-color: #fa65b1;
+  background-color: var(--secondary-color);
 }
 
 
@@ -2197,7 +2198,7 @@ responsive
     padding: 45px;
   }
   .services .naccs .menu div  {
-    font-size: 0px;
+    font-size: 15px;
   }
   .services ul.nacc li .right-image img {
     float: none;
@@ -2243,5 +2244,13 @@ responsive
   }
   form#contact {
     padding: 30px;
+  }
+
+  .services .naccs .menu div {
+    width: max-content;
+  }
+  
+  .services .naccs .menu div .thumb {
+    width: max-content;
   }
 }

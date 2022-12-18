@@ -812,7 +812,7 @@ body {
 
 .footer-top .social-link {
   background-color: var(--white);
-  color: var(--winter-sky);
+  color: var(--secondary-color);
   font-size: 18px;
   padding: 8px;
   border-radius: 50%;
@@ -872,16 +872,16 @@ body {
   #GO TO TOP
 \*-----------------------------------*/
 
-/* .go-top {
+.go-top {
   position: fixed;
   bottom: 0;
   right: 15px;
-  background-color: var(--winter-sky);
+  background-color: var(--secondary-color);
   color: var(--white);
   font-size: 2rem;
   padding: 14px;
   border-radius: var(--radius-4);
-  box-shadow: -3px 3px 15px var(--winter-sky_50);
+  box-shadow: -3px 3px 15px var(--secondary-color);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
@@ -896,7 +896,7 @@ body {
 
 .background-header {
   color: black;
-} */
+}
 
 
 
@@ -1362,6 +1362,10 @@ body {
   color: white;
 }
 
+.popup-header .close-button:hover {
+  color: var(--secondary-color);
+}
+
 .popup-body {
   /* padding: 10px 15px; */
   font-family: var(--ff-source-sans-pro);
@@ -1801,4 +1805,8 @@ body {
 
 .hidden-item {
   display: none;
+}
+
+.our-portfolio {
+  padding-bottom: 150px;
 }
